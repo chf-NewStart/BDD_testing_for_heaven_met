@@ -48,7 +48,10 @@ npm run install-driver
 
 ## Running
 
+```bash
 npx cucumber-js
+```
+
 This will execute all the `.feature` files in the `features` directory with their corresponding `step definitions`.
 
 
