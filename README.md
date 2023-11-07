@@ -24,6 +24,28 @@ npm install
 ```
 Make sure you have the correct version of ChromeDriver that matches your Chrome browser's version. You can check your Chrome version by navigating to `chrome://version/` in your browser.
 
+
+Install chromedriver as a development dependency:
+
+```bash
+npm install --save-dev chromedriver
+```
+
+Update your `package.json`` to include a script to install chromedriver:
+
+```bash
+"scripts": {
+  "install-driver": "chromedriver --versions.chrome=<Your Chrome Version>"
+}
+```
+
+You can check if the driver is correctly installed by
+
+```bash
+npm run install-driver
+``` 
+(you should see a blank chrome page popped out)
+
 ## Running
 
 npx cucumber-js
